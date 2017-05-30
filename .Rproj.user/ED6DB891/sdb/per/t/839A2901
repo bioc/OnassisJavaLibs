@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "\nget_dsQTLCHR = function() {\n utils::data(dsQTLCHR, package=\"dsQTL\")\n dsQTLCHR\n}\nget_dsQTLCHRLOC = function() {\n utils::data(dsQTLCHRLOC, package=\"dsQTL\")\n dsQTLCHRLOC\n}\nget_dsQTLCHRLOCEND = function() {\n utils::data(dsQTLCHRLOCEND, package=\"dsQTL\")\n dsQTLCHRLOCEND\n}\nget_dsQTLSYMBOL = function() {\n utils::data(dsQTLSYMBOL, package=\"dsQTL\")\n dsQTLSYMBOL\n}\n",
+    "created" : 1495621857285.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1050297883",
+    "id" : "839A2901",
+    "lastKnownWriteTime" : 1493071781,
+    "last_content_update" : 1493071781,
+    "path" : "~/Downloads/dsQTL/R/getmeta.R",
+    "project_path" : null,
+    "properties" : {
+    },
+    "relative_order" : 8,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

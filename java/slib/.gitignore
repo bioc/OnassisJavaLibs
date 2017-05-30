@@ -1,0 +1,17 @@
+pom.xml.releaseBackup
+release.properties
+*.log
+target/
+.settings/
+.classpath
+.project
+trash/
+slib-tools-sml-toolkit-gui/
+slib-tools-sml-dist/
+nbactions.xml
+pom.xml.versionsBackup
+doc_perso/
+slib-quicktest/
+releases/
+slib.quicktest.zip
+*.jar

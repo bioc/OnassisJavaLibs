@@ -1,0 +1,2 @@
+.onload <- function(libname, pkgname) {
+}

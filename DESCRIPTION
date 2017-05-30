@@ -1,0 +1,18 @@
+Package: OnassisJavaLibs
+Type: Package
+Title: OnassisJavaLibs, java libraries to run conceptmapper and semantic similarity
+Version: 0.99.1
+Author: Eugenia Galeota
+Authors@R: person("Eugenia", "Galeota", email="eugenia.galeota@gmail.com",
+            role=c("aut", "cre"))
+Maintainer: Eugenia Galeota <eugenia.galeota@gmail.com>
+Description: A package that contains java libraries to call conceptmapper and compute semnatic similarity from R
+License: GPL-2
+Depends:
+    R (>= 3.4)
+SystemRequirements: Java (>= 1.8)
+Encoding: UTF-8
+LazyData: true
+biocViews: ExperimentData, Software, DataImport
+NeedsCompilation: no
+RoxygenNote: 6.0.1
