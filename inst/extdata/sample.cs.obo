@@ -1,0 +1,173 @@
+format-version: 1.2
+date: 25:05:2007 09:56
+saved-by: minna
+auto-generated-by: OBO-Edit 1.100-beta25
+default-namespace: cell
+remark: $Revision: 1.26 $  Drafted by Jonathan Bard, Michael Ashburner, David States, Seung Y. Rhee, and Pascal Gaudet. Incorporating terms and synonyms from the eVOC cell ontology of Janet Kelso, Win Hide et al. http://www.sanbi.ac.za/evoc/ontologies.html. Hematopoietic cell terms revised by Alexander Diehl, MGI, The Jackson Laboratory. Contact Oliver Hofmann, oliver@sanbi.ac.za, at SANBI, University of the Western Cape.
+
+[Term]
+id: CL:0000000
+name: cell
+def: "Anatomical structure that has as its parts a maximally connected cell compartment surrounded by a plasma membrane." [CARO:mah]
+xref_analog: FMA:68646
+
+[Term]
+id: CL:0000003
+name: native cell
+namespace: cell
+def: "A cell that is found in a natural setting, which includes multicellular organism cells 'in vivo' (i.e. part of an organism), and unicellular organisms 'in environment' (i.e. part of a natural environment)." [CARO:mah]
+comment: To accommodate unicellular organisms better, 'cell in vivo' has been re-labeled 'native cell' to better represent its intended meaning - that is, that it is a cell in the context of a multicellular organism or in a natural environment. 'Native' is intended to contrast with 'in vitro', which refers to cells or other biological entities that have been intentionally placed in a controlled, non-natural setting for the purpose of study or manipulation. (MAH 1.12.12).
+subset: ubprop:upper_level
+synonym: "cell in vivo" NARROW []
+xref: CARO:0000013
+is_a: CL:0000000 ! cell
+
+[Term]
+id: CL:0000009
+name: fusiform initial
+def: "An elongated cell with approximately wedge-shaped ends, found in the vascular cambium, which gives rise to the elements of the axial system in the secondary vascular tissues." [ISBN:0471245208]
+related_synonym: "xylem initial" []
+related_synonym: "xylem mother cell" []
+related_synonym: "xylem mother cell activity" []
+is_a: CL:0000000 ! cell
+
+[Term]
+id: CL:0000041
+name: mature eosinophil
+def: "A fully differentiated eosinophil, a granular leukocyte with a nucleus that usually has two lobes connected by one or more slender threads of chromatin, and cytoplasm containing coarse, round granules that are uniform in size and which can be stained by the dye eosin." [GOC:add, ISBN:0721601464]
+exact_synonym: "mature eosinocyte" []
+exact_synonym: "mature eosinophil leucocyte" []
+exact_synonym: "mature eosinophil leukocyte" []
+broad_synonym: "polymorphonuclear leucocyte" []
+broad_synonym: "polymorphonuclear leukocyte" []
+is_a: CL:0000771 {is_inferred="true"} ! eosinophil
+is_a: CL:0002242 ! nucleate cell
+
+[Term]
+id: CL:0002242
+name: nucleate cell
+namespace: cell
+def: "A cell containing at least one nucleus." [GOC:tfm]
+xref: FMA:67513
+is_a: CL:0000003 ! native cell
+intersection_of: CL:0000003 ! native cell
+intersection_of: has_part GO:0005634 ! nucleus
+relationship: has_part GO:0005634 ! nucleus
+created_by: tmeehan
+creation_date: 2010-09-07T03:32:33Z
+
+[Term]
+id: CL:0000094
+name: granulocyte
+namespace: cell
+def: "A leukocyte with abundant granules in the cytoplasm." [GOC:amm, GOC:tfm, http://en.wikipedia.org/wiki/Granulocyte, MESH:A11.118.637.415, MESH:D006098]
+synonym: "granular leucocyte" EXACT []
+synonym: "granular leukocyte" EXACT []
+synonym: "polymorphonuclear leukocyte" EXACT []
+xref: BTO:0000539
+xref: BTO:0001026
+xref: CALOHA:TS-0422
+xref: FMA:62854
+is_a: CL:0000081 ! blood cell
+intersection_of: CL:0000766 ! myeloid leukocyte
+intersection_of: capable_of GO:0008015 ! blood circulation
+intersection_of: has_part GO:0030141 ! secretory granule
+intersection_of: has_plasma_membrane_part PR:000001012 ! integrin alpha-M
+intersection_of: has_plasma_membrane_part PR:000001332 ! carcinoembryonic antigen-related cell adhesion molecule 8
+intersection_of: has_plasma_membrane_part PR:000001969 ! urokinase plasminogen activator surface receptor
+intersection_of: lacks_plasma_membrane_part PR:000001002 ! CD19 molecule
+intersection_of: lacks_plasma_membrane_part PR:000001020 ! CD3 epsilon
+intersection_of: lacks_plasma_membrane_part PR:000001024 ! neural cell adhesion molecule 1
+intersection_of: lacks_plasma_membrane_part PR:000001084 ! T-cell surface glycoprotein CD8 alpha chain
+relationship: capable_of GO:0008015 ! blood circulation
+relationship: has_part GO:0030141 ! secretory granule
+relationship: has_plasma_membrane_part PR:000001012 ! integrin alpha-M
+relationship: has_plasma_membrane_part PR:000001332 ! carcinoembryonic antigen-related cell adhesion molecule 8
+relationship: has_plasma_membrane_part PR:000001969 ! urokinase plasminogen activator surface receptor
+relationship: lacks_plasma_membrane_part PR:000001002 ! CD19 molecule
+relationship: lacks_plasma_membrane_part PR:000001020 ! CD3 epsilon
+relationship: lacks_plasma_membrane_part PR:000001024 ! neural cell adhesion molecule 1
+relationship: lacks_plasma_membrane_part PR:000001084 ! T-cell surface glycoprotein CD8 alpha chain
+
+[Term]
+id: CL:0000771
+name: eosinophil
+namespace: cell
+def: "Any of the immature or mature forms of a granular leukocyte with a nucleus that usually has two lobes connected by one or more slender threads of chromatin, and cytoplasm containing coarse, round granules that are uniform in size and which can be stained by the dye eosin. Eosinophils are CD9-positive, CD191-positive, and CD193-positive." [GOC:add, GOC:amm, GOC:dsd, GOC:tfm, ISBN:0721601464, PMCID:PMC2626675, PMID:10914487, PMID:1662676]
+comment: Eosinophils are also CD14-negative, CD32-positive, CD44-positive, CD48-positive, CD69-positive, CD192-negative, MBP1-positive, MBP2-positive, TLR2-negative, TLR4-negative, and lineage-negative (B220, CD2, CD14, CD19, CD56, CD71, CD117, CD123, CD235a (glycophorin A), and TER119). The cytokines IL-3, IL-5, and GM-CSF are involved in their development and differentiation. Usually considered CD16-negative, CD16 is observed on eosinophilic metamyelocyte.
+synonym: "eosinocyte" EXACT []
+synonym: "eosinophilic granulocyte" EXACT []
+synonym: "eosinophilic leucocyte" EXACT []
+synonym: "eosinophilic leukocyte" EXACT []
+synonym: "polymorphonuclear leucocyte" BROAD []
+synonym: "polymorphonuclear leukocyte" BROAD []
+xref: BTO:0000399
+xref: CALOHA:TS-0279
+xref: FMA:62861
+is_a: CL:0000094 {is_inferred="true"} ! granulocyte
+intersection_of: CL:0000094 ! granulocyte
+intersection_of: has_plasma_membrane_part PR:000001254 ! C-C chemokine receptor type 1
+intersection_of: has_plasma_membrane_part PR:000001255 ! C-C chemokine receptor type 3
+intersection_of: has_plasma_membrane_part PR:000001307 ! CD44 molecule
+intersection_of: has_plasma_membrane_part PR:000001343 ! CD69 molecule
+intersection_of: has_plasma_membrane_part PR:000005178 ! CD9 molecule
+relationship: has_plasma_membrane_part PR:000001254 ! C-C chemokine receptor type 1
+relationship: has_plasma_membrane_part PR:000001255 ! C-C chemokine receptor type 3
+relationship: has_plasma_membrane_part PR:000001307 ! CD44 molecule
+relationship: has_plasma_membrane_part PR:000001343 ! CD69 molecule
+relationship: has_plasma_membrane_part PR:000005178 ! CD9 molecule
+
+[Term]
+id: CL:0000540
+name: neuron
+namespace: cell
+def: "The basic cellular unit of nervous tissue. Each neuron consists of a body, an axon, and dendrites. Their purpose is to receive, conduct, and transmit impulses in the nervous system." [http://en.wikipedia.org/wiki/Neuron, MESH:A08.663, MESH:D009474]
+comment: These cells are also reportedly CD4-negative and CD200-positive. They are also capable of producing CD40L and IFN-gamma.
+synonym: "nerve cell" EXACT []
+xref: BTO:0000938
+xref: CALOHA:TS-0683
+xref: FBbt:00005106
+xref: FMA:54527
+xref: VHOG:0001483
+xref: WBbt:0003679
+is_a: CL:0000000 ! cell
+relationship: capable_of GO:0019226 ! transmission of nerve impulse
+relationship: develops_from CL:0000031 ! neuroblast
+
+[Term]
+id: CL:0000081
+name: blood cell
+namespace: cell
+def: "A cell found predominately in the blood." [GOC:add, GOC:tfm]
+xref: FMA:62844
+is_a: CL:0000988 {is_inferred="true"} ! hematopoietic cell
+intersection_of: CL:0000988 ! hematopoietic cell
+intersection_of: capable_of GO:0008015 ! blood circulation
+relationship: capable_of GO:0008015 ! blood circulation
+
+[Term]
+id: CL:0000988
+name: hematopoietic cell
+namespace: cell
+def: "A cell of a hematopoietic lineage." [GO_REF:0000031, GOC:add]
+synonym: "haematopoietic cell" EXACT []
+synonym: "haemopoietic cell" EXACT []
+synonym: "hemopoietic cell" EXACT []
+xref: BTO:0000574
+xref: CALOHA:TS-2017
+xref: FMA:70366
+xref: FMA:83598
+is_a: CL:0000548 ! animal cell
+
+[Term]
+id: CL:0000548
+name: animal cell
+namespace: cell
+subset: ubprop:upper_level
+is_a: CL:0000255 ! eukaryotic cell
+
+[Term]
+id: CL:0000255
+name: eukaryotic cell
+namespace: cell
+is_a: CL:0000003 ! native cell
