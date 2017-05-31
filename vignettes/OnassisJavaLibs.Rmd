@@ -116,7 +116,7 @@ similarity_score <- .jcall(similarity, "D", "pair_similarity", URI1, URI2, .jcas
 similarity_score
 ```
 
-#Acknowledgements 
+# Acknowledgements 
 
 We would like to thank you the library providers.
 
