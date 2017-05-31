@@ -11,14 +11,6 @@ vignette: >
   %\VignetteDepends{OnassisJavaLibs}
 ---
 
-```{r importa, echo=FALSE,eval=TRUE, message=FALSE}
-#library(Onassis)
-#library(data.table)
-#library(DT)
-#library(htmltools)
-#library(BiocStyle)
-```
-
 # Introduction
 
 OnassisJavaLibs is a data package containing various compiled libraries in jar format and their source code used by `r BiocStyle::Biocpkg("Onassis")` to

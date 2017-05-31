@@ -1,11 +1,9 @@
 #' OnassisJavaLibs
 #'
 #'Is a data package containing two compiled libraries in jar format and their source code used to
-#'<ul>
-#'<li> create a conceptmapper pipeline aimed at finding concepts belonging to OBO ontologies in (OBO, OWL or RDF format) any type of text </li>
-#'<li> compute different semantic similarity measures between two concepts or two sets of concepts </li>
+#' * create a conceptmapper pipeline aimed at finding concepts belonging to OBO ontologies in (OBO, OWL or RDF format) any type of text
+#' * compute different semantic similarity measures between two concepts or two sets of concepts
 #'
-#'</ul>
 #' The methods for the conceptmapper pipeline have been developed and published by the Reagents of the University of Colorado under BSD 3-clause license. In order to have a jar file including all the needed dependencies, the source code avaiable in the GitHub repository https://github.com/UCDenver-ccp/ccp-nlp, version 3.3.2 has been compiled using maven with the following goals:
 #' /code{ mvn clean compile assembly:single  -Dlog4j.configuration=log4j2.properties}
 #' The methods for computing the semantic similarities instead have been developed and published by the the Ecole des mines d'Alès under the GPL-compatible CeCILL licence. In this case the source code available in the GitHub repository https://github.com/sharispe/slib, version 0.9.5, has been downloaded and modified in some parts to load OBO ontologies without generating an exception if a namespace is not provided. In particular, in the new version of the library the following files have been modified:
