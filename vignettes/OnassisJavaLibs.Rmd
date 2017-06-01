@@ -31,21 +31,22 @@ They are available in jar format within the extdata directory of this package an
 The source code for the java libraries is available in the `java` directory of package tarball. Users interested in compiling their own jar files can refer to the following information. 
 
 The `conceptmapper` subdirectory contains the java code to annotate text with concepts from OBO ontologies. 
-To create a jar file including all the needed dependencies, the source code can be compiled using maven (Apache Maven 3.3.9 was used) with the following goals:
+To create a jar file including all the needed dependencies, the source code can be compiled using maven (Apache Maven 3.3.9 was used).
+
+The `slib` and `similarity` subdirectories contain the java code to determine the semantic similarities between concepts, and can be compiled and installed with the following goals, respectively:
 
 ```{r, engine = 'bash', eval = FALSE}
+#From the conceptmapper directory
 mvn clean compile assembly:single --Dlog4j.configuration=log4j2.properties
-```
 
-The `slib` and 'similarity` subdirectories contain the java code to determine the semantic similarities between concepts, and can be compiled and installed with the following goals, respectively:
-
-```{r, engine = 'bash', eval = FALSE}
+#From the slib directory
 mvn clean install 
+
+#From the similarity directory
+mvn clean install assembly:single 
+
 ```
 
-```{r, engine = 'bash', eval = FALSE}
-mvn clean install assembly:single 
-```
 
 # Use of the package 
 

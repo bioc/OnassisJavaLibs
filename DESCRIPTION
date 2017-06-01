@@ -1,7 +1,7 @@
 Package: OnassisJavaLibs
 Type: Package
 Title: OnassisJavaLibs, java libraries to run conceptmapper and semantic similarity
-Version: 0.99.5
+Version: 0.99.6
 Author: Eugenia Galeota
 Authors@R: person("Eugenia", "Galeota", email="eugenia.galeota@gmail.com",
             role=c("aut", "cre"))
@@ -11,6 +11,8 @@ License: GPL-2
 Depends:
     R (>= 3.4)
 Imports: rJava
+Suggests: BiocStyle, rmarkdown, knitr
+VignetteBuilder: rmarkdown, knitr
 SystemRequirements: Java (>= 1.8)
 Encoding: UTF-8
 LazyData: true
