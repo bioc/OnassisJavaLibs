@@ -1,6 +1,5 @@
 format-version: 1.2
 date: 25:05:2007 09:56
-saved-by: minna
 auto-generated-by: OBO-Edit 1.100-beta25
 default-namespace: cell
 remark: $Revision: 1.26 $  Drafted by Jonathan Bard, Michael Ashburner, David States, Seung Y. Rhee, and Pascal Gaudet. Incorporating terms and synonyms from the eVOC cell ontology of Janet Kelso, Win Hide et al. http://www.sanbi.ac.za/evoc/ontologies.html. Hematopoietic cell terms revised by Alexander Diehl, MGI, The Jackson Laboratory. Contact Oliver Hofmann, oliver@sanbi.ac.za, at SANBI, University of the Western Cape.
