@@ -171,3 +171,93 @@ id: CL:0000255
 name: eukaryotic cell
 namespace: cell
 is_a: CL:0000003 ! native cell
+
+[Term]
+id: CL:0000066
+name: epithelial cell
+def: "A cell that is usually found in a two-dimensional sheet with a free surface." [FB:ma, MESH:A.11.436]
+xref: FBbt:00000124
+is_a: CL:0000063 ! cell by histology
+
+[Term]
+id: CL:0000063
+name: cell by histology
+def: "A classification of cells by their microscopical appearance." [FB:ma]
+is_a: CL:0000012 ! cell by class
+
+
+[Term]
+id: CL:0000012
+name: cell by class
+is_a: CL:0000003 ! cell in vivo
+
+[Term]
+id: CL:0000038
+name: erythroid progenitor cell
+def: "A progenitor cell committed to the erythroid lineage." [GOC:add, ISBN:0721601464]
+synonym: "BFU-E" RELATED []
+synonym: "blast forming unit erythroid" RELATED []
+synonym: "burst forming unit erythroid" RELATED []
+synonym: "CFU-E" RELATED []
+synonym: "colony forming unit erythroid" RELATED []
+synonym: "erythroid stem cell" RELATED []
+is_a: CL:0000839 ! myeloid progenitor cell
+relationship: develops_from CL:0000050 ! megakaryocyte erythroid progenitor cell
+
+[Term]
+id: CL:0000839
+name: myeloid progenitor cell
+def: "A progenitor cell of any myeloid lineage, potentially multipotent." [GOC:add]
+comment: Note that this is a class of cell types, not an identified single cell type.
+is_a: CL:0000837 ! hematopoietic progenitor cell
+
+[Term]
+id: CL:0000837
+name: hematopoietic progenitor cell
+def: "A progenitor cell of any hematopoietic lineage, potentially multipotent." [GOC:add]
+comment: Note that this is a class of cell types, not an identified single cell type.
+synonym: "hemopoietic progenitor cell" EXACT []
+is_a: CL:0000055 ! non-terminally differentiated cell
+relationship: develops_from CL:0000037 ! hematopoietic stem cell
+
+[Term]
+id: CL:0000055
+name: non-terminally differentiated cell
+def: "A precursor cell with a limited number of potential fates." [SANBI:mhl]
+synonym: "blast cell" EXACT []
+is_a: CL:0000012 ! cell by class
+
+[Term]
+id: CL:0000236
+name: B cell
+def: "A lymphocyte of B lineage with the phenotype CD19-positive and surface immunoglobulin-positive." [GO_REF:0000031, GOC:add, ISBN:0781735149]
+synonym: "B lymphocyte" EXACT []
+synonym: "B-cell" EXACT []
+synonym: "B-lymphocyte" EXACT []
+is_a: CL:0000945 ! lymphocyte of B lineage
+relationship: develops_from CL:0000826 ! pro-B cell
+
+[Term]
+id: CL:0000945
+name: lymphocyte of B lineage
+def: "A lymphocyte of B lineage is a lymphocyte that expresses CD19 (P15391/CD19_HUMAN; PIRSF016630) on the cell surface. An additional defining characteristic is the commitment to express an immunoglobulin complex." [GO_REF:0000031, GOC:add, GOC:rhs, ISBN:0781735149]
+comment: Types of B lineage lymphocytes include B cells and antibody secreting cells (plamsablasts and plasma cells).
+is_a: CL:0000542 ! lymphocyte
+relationship: develops_from CL:0000826 ! pro-B cell
+
+[Term]
+id: CL:0000542
+name: lymphocyte
+def: "A cell of the B cell, T cell, or natural killer cell lineage." [GOC:add, ISBN:0781735149]
+is_a: CL:0000738 ! leukocyte
+relationship: develops_from CL:0000051 ! common lymphoid progenitor
+
+[Term]
+id: CL:0000738
+name: leukocyte
+def: "A nucleated cell of the myeloid or lymphoid lineages, found in blood or other tissue." [GOC:add]
+synonym: "immune cell" EXACT []
+synonym: "leucocyte" EXACT []
+synonym: "white blood cell" EXACT []
+is_a: CL:0000988 ! hematopoietic cell
+relationship: develops_from CL:0000037 ! hematopoietic stem cell
