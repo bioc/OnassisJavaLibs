@@ -1,0 +1,213 @@
+format-version: 1.2
+data-version: releases/2015-07-15
+date: 15:07:2015 17:00
+saved-by: elvira
+auto-generated-by: OBO-Edit 2.3.1
+subsetdef: DO_cancer_slim "DO cancer slim"
+subsetdef: DO_MGI_slim "DO_MGI_slim"
+subsetdef: GOLD "GOLD"
+subsetdef: gram-negative_bacterial_infectious_disease "gram-negative bacterial infectious disease"
+subsetdef: gram-positive_bacterial_infectious_disease "gram-positive bacterial infectious disease"
+subsetdef: NCIthesaurus "NCIt"
+subsetdef: sexually_transmitted_infectious_disease "sexually transmitted infectious disease"
+subsetdef: tick-borne_infectious_disease "tick-borne infectious disease"
+subsetdef: TopNodes_DOcancerslim "TopNodes_DOcancerslim"
+subsetdef: zoonotic_infectious_disease "zoonotic infectious disease"
+default-namespace: disease_ontology
+remark: This work is licensed under a Creative Commons Attribution 3.0 Unported License http://creativecommons.org/licenses/by/3.0/.
+ontology: doid
+
+[Term]
+id: DOID:9256
+name: colorectal cancer
+def: "A large intestine cancer that is located_in the colon and/or located_in the rectum." [url:http\://www.cancer.gov/dictionary?CdrID=444983]
+comment: Xref MGI.\nOMIM mapping confirmed by DO. [SN].
+subset: DO_MGI_slim
+xref: KEGG:05210
+xref: MSH:D015179
+xref: OMIM:114500
+xref: OMIM:608812
+xref: OMIM:611469
+xref: OMIM:612229
+xref: OMIM:612230
+xref: OMIM:612231
+xref: OMIM:612232
+xref: OMIM:612589
+xref: OMIM:612590
+xref: OMIM:612591
+xref: OMIM:612592
+xref: OMIM:615083
+xref: UMLS_CUI:C1527249
+is_a: DOID:5672 ! large intestine cancer
+
+[Term]
+id: DOID:5672
+name: large intestine cancer
+alt_id: DOID:1994
+alt_id: DOID:1997
+def: "An intestinal cancer that effects the long, tube-like organ that is connected to the small intestine at one end and the anus at the other." [url:http\://en.wikipedia.org/wiki/Large_intestine]
+subset: TopNodes_DOcancerslim
+xref: MSH:D015179
+xref: NCI:C2955
+xref: SNOMEDCT_2010_1_31:363510005
+xref: SNOMEDCT_2010_1_31:408645001
+xref: SNOMEDCT_2010_1_31:93854002
+xref: UMLS_CUI:C0009402
+xref: UMLS_CUI:C0346629
+xref: UMLS_CUI:C1319315
+is_a: DOID:10155 ! intestinal cancer
+
+[Term]
+id: DOID:10155
+name: intestinal cancer
+def: "A gastrointestinal system cancer that is located_in the intestine." [url:http\://en.wikipedia.org/wiki/Intestine]
+subset: TopNodes_DOcancerslim
+synonym: "malignant intestinal tumors" EXACT [NCI2004_11_17:C4572]
+synonym: "malignant neoplasm of intestine" EXACT [SNOMEDCT_2005_07_31:93838000]
+xref: ICD9CM:159.0
+xref: MSH:D007414
+xref: NCI:C4572
+xref: SNOMEDCT_2010_1_31:187819006
+xref: SNOMEDCT_2010_1_31:190089002
+xref: SNOMEDCT_2010_1_31:363508008
+xref: SNOMEDCT_2010_1_31:93838000
+xref: UMLS_CUI:C0346627
+is_a: DOID:3119 ! gastrointestinal system cancer
+
+[Term]
+id: DOID:3119
+name: gastrointestinal system cancer
+alt_id: DOID:4945
+alt_id: DOID:8377
+def: "An organ system cancer located_in gastrointestinal tract that is manifested in organs of the gastrointestinal system." [url:http\://en.wikipedia.org/wiki/Human_gastrointestinal_tract]
+subset: TopNodes_DOcancerslim
+synonym: "digestive system cancer" EXACT []
+synonym: "gastrointestinal tract cancer" EXACT [NCI2004_11_17:C4890]
+synonym: "GI tumor" EXACT [NCI2004_11_17:C3052]
+xref: ICD9CM:239.0
+xref: MSH:D004067
+xref: SNOMEDCT_2010_1_31:126768004
+xref: SNOMEDCT_2010_1_31:128348002
+xref: SNOMEDCT_2010_1_31:128415001
+xref: SNOMEDCT_2010_1_31:189527000
+xref: SNOMEDCT_2010_1_31:276806006
+xref: SNOMEDCT_2010_1_31:367543008
+xref: SNOMEDCT_2010_1_31:428905002
+xref: SNOMEDCT_2010_1_31:93811007
+xref: UMLS_CUI:C0012243
+xref: UMLS_CUI:C0017185
+xref: UMLS_CUI:C0685938
+is_a: DOID:0050686 ! organ system cancer
+
+[Term]
+id: DOID:0050686
+name: organ system cancer
+def: "A cancer that is classified based on the organ it starts in." [url:http\://cancerguide.org/basic.html]
+is_a: DOID:162 ! cancer
+created_by: snadendla
+creation_date: 2011-06-13T03:28:33Z
+
+[Term]
+id: DOID:162
+name: cancer
+def: "A disease of cellular proliferation that is malignant and primary, characterized by uncontrolled cellular proliferation, local cell invasion and metastasis." [stedman:rlc, url:http\://en.wikipedia.org/wiki/cancer, url:http\://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&va=cancer]
+comment: Updating out dated UMLS CUI.
+synonym: "malignant neoplasm" EXACT []
+synonym: "malignant tumor " EXACT []
+synonym: "primary cancer" EXACT []
+xref: ICD9CM:239.4
+xref: SNOMEDCT_2010_1_31:189535002
+xref: UMLS_CUI:C0006826
+is_a: DOID:14566 ! disease of cellular proliferation
+
+[Term]
+id: DOID:14566
+name: disease of cellular proliferation
+alt_id: DOID:0000818
+def: "A disease that is characterized by abnormally rapid cell division." [url:http\://en.wikipedia.org/w/index.php?title=Cell_proliferation]
+synonym: "cell process disease" EXACT []
+is_a: DOID:4 ! disease
+
+[Term]
+id: DOID:4
+name: disease
+def: "A disease is a disposition (i) to undergo pathological processes that (ii) exists in an organism because of one or more disorders in that organism." [url:http\://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf]
+xref: MSH:D004194
+xref: NCI:C2991
+xref: SNOMEDCT_2010_1_31:64572001
+xref: UMLS_CUI:C0012634
+
+[Term]
+id: DOID:707
+name: B-cell lymphoma
+def: "A non-Hodgkin lymphoma that has_material_basis_in B cells." [url:http\://en.wikipedia.org/wiki/B-cell_lymphoma]
+subset: DO_cancer_slim
+synonym: "B-cell lymphocytic neoplasm" EXACT []
+xref: NCI:C27907
+xref: SNOMEDCT_2010_1_31:413616009
+xref: UMLS_CUI:C1332362
+is_a: DOID:0060060 ! non-Hodgkin lymphoma
+
+[Term]
+id: DOID:0060060
+name: non-Hodgkin lymphoma
+def: "A lymphoma that is characterized as any kind of lymphoma except Hodgkin's lymphoma." [url:http\://en.wikipedia.org/wiki/Non-Hodgkin_lymphoma, url:http\://www.cancer.gov/dictionary?CdrID=45148]
+comment: OMIM mapping confirmed by DO. [LS].
+xref: OMIM:605027
+is_a: DOID:0060058 ! lymphoma
+
+[Term]
+id: DOID:0060058
+name: lymphoma
+alt_id: DOID:1033
+alt_id: DOID:353
+def: "A hematologic cancer that affects lymphocytes that reside in the lymphatic system and in blood-forming organs." [url:http\://en.wikipedia.org/wiki/Lymphoma, url:http\://www.lymphoma.org/site/pp.asp?c=bkLTKaOQLmK8E&b=6300161, url:http\://www.nlm.nih.gov/medlineplus/lymphoma.html]
+subset: DO_cancer_slim
+synonym: "lymphoid cancer" EXACT []
+xref: MSH:D008223
+xref: NCI:C3208
+xref: SNOMEDCT_2010_1_31:118600007
+xref: SNOMEDCT_2010_1_31:188676008
+xref: SNOMEDCT_2010_1_31:188694002
+xref: SNOMEDCT_2010_1_31:188695001
+xref: SNOMEDCT_2010_1_31:188704004
+xref: SNOMEDCT_2010_1_31:189959002
+xref: SNOMEDCT_2010_1_31:189965002
+xref: SNOMEDCT_2010_1_31:21964009
+xref: SNOMEDCT_2010_1_31:269627002
+xref: SNOMEDCT_2010_1_31:414628006
+xref: UMLS_CUI:C0024299
+xref: UMLS_CUI:C0598798
+is_a: DOID:2531 ! hematologic cancer
+
+[Term]
+id: DOID:2531
+name: hematologic cancer
+alt_id: DOID:1034
+alt_id: DOID:2532
+def: "An immune system cancer located_in the hematological system that is characterized by uncontrolled cellular proliferation in blood, bone marrow and lymph nodes." [url:http\://en.wikipedia.org/wiki/Blood_cancer, url:http\://www.cancer.gov/dictionary/?CdrID=45708]
+subset: TopNodes_DOcancerslim
+synonym: "blood cancer" EXACT [CSP2005:2004-0139]
+synonym: "Hematologic malignancy" EXACT [SNOMEDCT_2005_07_31:269475001]
+synonym: "Hematologic malignancy (disorder)" EXACT [SNOMEDCT_2005_07_31:127221002]
+synonym: "Hematologic neoplasm (disorder)" EXACT [SNOMEDCT_2005_07_31:129154003]
+synonym: "Hematological tumors" EXACT [NCI2004_11_17:C27134]
+synonym: "hematopoietic and lymphoid system tumor" EXACT []
+synonym: "hematopoietic cancer" EXACT []
+synonym: "hematopoietic neoplasm (morphologic abnormality)" EXACT [SNOMEDCT_2005_07_31:414388001]
+synonym: "hematopoietic tumors" EXACT [NCI2004_11_17:C27134]
+synonym: "malignant hematopoietic neoplasm (morphologic abnormality)" EXACT [SNOMEDCT_2005_07_31:414644002]
+xref: MSH:D019337
+xref: NCI:C27134
+xref: SNOMEDCT_2010_1_31:414388001
+xref: SNOMEDCT_2010_1_31:414644002
+xref: UMLS_CUI:C0376544
+is_a: DOID:0060083 ! immune system cancer
+
+[Term]
+id: DOID:0060083
+name: immune system cancer
+def: "An organ system cancer located_in the immune system that is characterized by uncontrolled cellular proliferation in organs of the immune system." [url:http\://en.wikipedia.org/wiki/Immune_system]
+is_a: DOID:0050686 ! organ system cancer
+created_by: lschriml
+creation_date: 2011-06-08T01:11:18Z
