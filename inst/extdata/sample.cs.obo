@@ -260,3 +260,385 @@ synonym: "leucocyte" EXACT []
 synonym: "white blood cell" EXACT []
 is_a: CL:0000988 ! hematopoietic cell
 relationship: develops_from CL:0000037 ! hematopoietic stem cell
+
+[Term]
+id: CL:0011108
+name: colon epithelial cell
+def: "Epithelial cell that is part of the colon epithelium. " [GOC:NV]
+synonym: "colonic epithelial cell" EXACT []
+synonym: "colon" EXACT []
+is_a: CL:0002253 ! epithelial cell of large intestine
+intersection_of: CL:0000066 ! epithelial cell
+intersection_of: part_of UBERON:0001155 ! colon
+relationship: part_of UBERON:0000397 ! colonic epithelium
+relationship: part_of UBERON:0001155 ! colon
+
+[Term]
+id: CL:0002253
+name: epithelial cell of large intestine
+namespace: cell
+alt_id: CL:1000292
+def: "An epithelial cell of the large intestine." [GOC:tfm]
+synonym: "epithelial cell of colon" RELATED []
+xref: BTO:0004297
+xref: FMA:256157
+is_a: CL:0002563 {is_inferred="true"} ! intestinal epithelial cell
+intersection_of: CL:0002563 ! intestinal epithelial cell
+intersection_of: part_of UBERON:0000059 ! large intestine
+relationship: part_of UBERON:0000059 ! large intestine
+created_by: tmeehan
+creation_date: 2010-09-08T09:28:22Z
+
+
+[Term]
+id: CL:0002563
+name: intestinal epithelial cell
+namespace: cell
+def: "An epithelial cell of the intestine." [GOC:tfm]
+is_a: CL:0002251 {is_inferred="true"} ! epithelial cell of alimentary canal
+intersection_of: CL:0000066 ! epithelial cell
+intersection_of: part_of UBERON:0000160 ! intestine
+relationship: part_of UBERON:0000160 ! intestine
+relationship: part_of UBERON:0001277 ! intestinal epithelium
+created_by: tmeehan
+creation_date: 2011-03-01T05:18:31Z
+
+[Term]
+id: CL:0002251
+name: epithelial cell of alimentary canal
+namespace: cell
+def: "An epithelial cell of the musculomembranous digestive tube extending from the mouth to the anus." [GOC:tfm, ISBN:0721662544]
+is_a: CL:0002076 ! endo-epithelial cell
+intersection_of: CL:0000066 ! epithelial cell
+intersection_of: part_of UBERON:0001555 ! digestive tract
+relationship: part_of UBERON:0001555 ! digestive tract
+created_by: tmeehan
+creation_date: 2010-09-08T09:26:53Z
+
+[Term]
+id: CL:0002076
+name: endo-epithelial cell
+namespace: cell
+def: "An epithelial cell derived from endoderm." [FMA:69075, GOC:tfm]
+xref: FMA:69075
+is_a: CL:0000066 ! epithelial cell
+relationship: develops_from CL:0000223 ! endodermal cell
+created_by: tmeehan
+creation_date: 2010-06-29T03:38:14Z
+
+[Term]
+id: CL:0002553
+name: fibroblast of lung
+namespace: cell
+def: "A fibroblast that is part of lung." [GOC:tfm]
+xref: BTO:0000764
+xref: CALOHA:TS-0575
+is_a: CL:0000057 {is_inferred="true"} ! fibroblast
+exact_synonym: "lung fibroblast" []
+exact_synonym: "lung fibroblasts" []
+intersection_of: CL:0000057 ! fibroblast
+intersection_of: part_of UBERON:0002048 ! lung
+relationship: part_of UBERON:0002048 ! lung
+created_by: tmeehan
+creation_date: 2011-02-28T05:11:03Z
+
+[Term]
+id: CL:0000057
+name: fibroblast
+namespace: cell
+def: "A connective tissue cell which secretes an extracellular matrix rich in collagen and other macromolecules. Flattened and irregular in outline with branching processes; appear fusiform or spindle-shaped." [http://en.wikipedia.org/wiki/Fibroblast, ISBN:0517223651, MESH:A11.329.228, MESH:D005347]
+comment: These cells may be vimentin-positive, fibronectin-positive, fsp1-positive, MMP-1-positive, collagen I-positive, collagen III-positive, and alpha-SMA-negative.
+xref: BTO:0000452
+xref: CALOHA:TS-0362
+xref: FMA:63877
+xref: VHOG:0001482
+is_a: CL:0002320 ! connective tissue cell
+relationship: develops_from CL:0000134 ! mesenchymal stem cell
+
+[Term]
+id: CL:0002320
+name: connective tissue cell
+namespace: cell
+alt_id: CL:1000406
+def: "A cell of the supporting or framework tissue of the body, arising chiefly from the embryonic mesoderm and including adipose tissue, cartilage, and bone." [GOC:tfm, ISBN:0618947256]
+xref: CALOHA:TS-2096
+xref: FMA:63875
+is_a: CL:0000548 ! animal cell
+is_a: CL:0002371 {is_inferred="true"} ! somatic cell
+intersection_of: CL:0002371 ! somatic cell
+intersection_of: part_of UBERON:0002384 ! connective tissue
+relationship: part_of UBERON:0002384 ! connective tissue
+created_by: tmeehan
+creation_date: 2010-09-15T03:01:54Z
+
+[Term]
+id: CL:0002327
+name: mammary gland epithelial cell
+namespace: cell
+def: "An epithelial cell of the mammary gland." [GOC:tfm, PMID:19022771]
+synonym: "breast epithelial cell" EXACT []
+synonym: "mammary epithelial cell" EXACT []
+synonym: "mammary epithelial cells" EXACT []
+xref: BTO:0004300
+is_a: CL:0000066 ! epithelial cell
+is_a: CL:0002371 ! somatic cell
+is_a: UBERON:0001911 ! mammary gland
+intersection_of: CL:0000066 ! epithelial cell
+intersection_of: part_of UBERON:0001911 ! mammary gland
+created_by: tmeehan
+creation_date: 2010-09-20T01:49:37Z
+
+[Term]
+id: UBERON:0002367
+name: prostate gland
+def: "The prostate gland is a partly muscular, partly glandular body that is situated near the base of the mammalian male urethra and secretes an alkaline viscid fluid which is a major constituent of the ejaculatory fluid." []
+synonym: "male prostate" EXACT []
+synonym: "prostata" RELATED []
+synonym: "prostate" EXACT []
+is_a: UBERON:0000077 ! mixed endoderm/mesoderm-derived structure
+is_a: UBERON:0010147 ! male accessory sex gland
+relationship: develops_from UBERON:0003820 ! prostate bud
+
+[Term]
+id: UBERON:0010147
+name: male accessory sex gland
+def: "Any gland, other than the gonad, associated with the genital tract, such as the ampulla of the ductus deferens and the bulbourethral, prostate and vesicular glands of the male." []
+synonym: "male accessory gland" RELATED []
+is_a: UBERON:0005399 ! male reproductive gland
+relationship: part_of UBERON:0000079 ! male reproductive system
+
+[Term]
+id: UBERON:0005399
+name: male reproductive gland
+def: "A sex gland that is part of a male reproductive system." []
+synonym: "accessory sex gland" RELATED []
+is_a: UBERON:0003937 ! sex gland
+intersection_of: UBERON:0003937 ! sex gland
+intersection_of: part_of UBERON:0000079 ! male reproductive system
+relationship: part_of UBERON:0000079 ! male reproductive system
+
+[Term]
+id: UBERON:0003937
+name: sex gland
+def: "Any of the organized aggregations of cells that function as secretory or excretory organs and are associated with reproduction." []
+synonym: "genitalia gland" EXACT []
+synonym: "gland of genitalia" EXACT []
+synonym: "gland of reproductive system" EXACT []
+synonym: "reproductive gland" EXACT []
+synonym: "reproductive system gland" EXACT []
+is_a: UBERON:0002530 ! gland
+is_a: UBERON:0005156 ! reproductive structure
+intersection_of: UBERON:0002530 ! gland
+intersection_of: part_of UBERON:0000990 ! reproductive system
+relationship: part_of UBERON:0000990 ! reproductive system
+
+[Term]
+id: UBERON:0002530
+name: gland
+def: "an organ that functions as a secretory or excretory organ" []
+synonym: "Druese" RELATED []
+synonym: "glandula" RELATED []
+synonym: "glandular organ" EXACT []
+is_a: UBERON:0000062 ! organ
+
+[Term]
+id: UBERON:0000062
+name: organ
+def: "Anatomical structure that performs a specific function or group of functions [WP]." []
+synonym: "anatomical unit" RELATED []
+synonym: "body organ" RELATED []
+synonym: "element" RELATED []
+is_a: UBERON:0010000 ! multicellular anatomical structure
+disjoint_from: UBERON:0034921 ! multi organ part structure
+relationship: part_of UBERON:0000467 ! anatomical system
+
+[Term]
+id: CL:0000222
+name: mesodermal cell
+namespace: cell
+def: "A cell of the middle germ layer of the embryo." [MESH:A16.254.425.660]
+synonym: "mesoblast" EXACT []
+synonym: "mesoderm cell" EXACT []
+synonym: "mesoderm" EXACT []
+xref: FMA:72554
+is_a: CL:0002321 ! embryonic cell
+relationship: part_of UBERON:0000926 ! mesoderm
+
+[Term]
+id: CL:0002321
+name: embryonic cell
+namespace: cell
+def: "A cell of the embryo." [FMA:0618947256]
+xref: CALOHA:TS-0263
+xref: FMA:82840
+xref: FMA:82841
+xref: WBbt:0007028
+is_a: CL:0000548 ! animal cell
+created_by: tmeehan
+creation_date: 2010-09-15T03:39:21Z
+
+[Term]
+id: UBERON:0000926
+name: mesoderm
+def: "The middle germ layer of the embryo, between the endoderm and ectoderm." []
+synonym: "embryonic mesoderm" RELATED []
+synonym: "entire mesoderm" RELATED []
+synonym: "mesodermal mantle" RELATED []
+is_a: UBERON:0000923 ! germ layer
+
+[Term]
+id: UBERON:0000923
+name: germ layer
+def: "A layer of cells produced during the process of gastrulation during the early development of the animal embryo, which is distinct from other such layers of cells, as an early step of cell differentiation. The three types of germ layers are the endoderm, ectoderm, and mesoderm." []
+synonym: "embryonic germ layer" RELATED []
+synonym: "embryonic germ layers" RELATED []
+synonym: "embryonic tissue" BROAD []
+synonym: "germinal layer" EXACT []
+synonym: "primary germ layer" NARROW []
+is_a: UBERON:0010316 ! germ layer / neural crest
+relationship: develops_from UBERON:0002532 ! epiblast (generic)
+relationship: part_of UBERON:0000922 ! embryo
+
+[Term]
+id: UBERON:0010316
+name: germ layer / neural crest
+is_a: UBERON:0005291 ! embryonic tissue
+relationship: develops_from UBERON:0002532 ! epiblast (generic)
+
+[Term]
+id: UBERON:0005291
+name: embryonic tissue
+def: "A portion of tissue that is part of an embryo." []
+synonym: "developing tissue" RELATED []
+synonym: "portion of embryonic tissue" EXACT []
+is_a: UBERON:0000479 ! tissue
+is_a: UBERON:0002050 ! embryonic structure
+intersection_of: UBERON:0000479 ! tissue
+intersection_of: part_of UBERON:0000922 ! embryo
+relationship: part_of UBERON:0000922 ! embryo
+relationship: part_of UBERON:0002050 ! embryonic structure
+
+[Term]
+id: UBERON:0000479
+name: tissue
+def: "Multicellular anatomical structure that consists of many cells of one or a few types, arranged in an extracellular matrix such that their long-range organisation is at least partly a repetition of their short-range organisation." []
+synonym: "portion of tissue" EXACT []
+synonym: "simple tissue" NARROW []
+synonym: "tissue portion" EXACT []
+is_a: UBERON:0010000 ! multicellular anatomical structure
+relationship: part_of UBERON:0000468 ! multicellular organism
+
+[Term]
+id: CL:0000084
+name: T cell
+namespace: cell
+alt_id: CL:0000804
+alt_id: CL:0000812
+def: "A type of lymphocyte whose defining characteristic is the expression of a T cell receptor complex." [GOC:add, GOC:tfm, ISBN:0781735149]
+synonym: "immature T cell" RELATED []
+synonym: "mature T cell" RELATED []
+synonym: "T lymphocyte" EXACT []
+synonym: "T-cell" EXACT []
+synonym: "T-lymphocyte" EXACT []
+xref: BTO:0000782
+xref: CALOHA:TS-1001
+xref: FMA:62870
+xref: VHOG:0001479
+is_a: CL:0000542 {is_inferred="true"} ! lymphocyte
+intersection_of: CL:0000542 ! lymphocyte
+intersection_of: capable_of GO:0002456 ! T cell mediated immunity
+disjoint_from: CL:0000623 ! natural killer cell
+disjoint_from: CL:0000945 ! lymphocyte of B lineage
+relationship: capable_of GO:0002456 ! T cell mediated immunity
+relationship: develops_from CL:0000827 ! pro-T cell
+
+
+[Term]
+id: UBERON:0000310
+name: breast
+def: "The upper ventral region of an animal's torso." []
+synonym: "mamma" RELATED []
+synonym: "mammary part of chest" EXACT []
+synonym: "mammary region" EXACT []
+is_a: UBERON:0034929 ! external soft tissue zone
+relationship: part_of UBERON:0001443 ! chest
+
+[Term]
+id: UBERON:0034929
+name: external soft tissue zone
+def: "A region or zone on the surface of an organism that encompasses skin and any adnexa, down through muscles and bounded by underlying skeletal support structures." []
+is_a: UBERON:0010000 ! multicellular anatomical structure
+relationship: has_part UBERON:0000014 ! zone of skin
+relationship: has_part UBERON:0001015 ! musculature
+relationship: has_part UBERON:0001021 ! nerve
+relationship: has_part UBERON:0002049 ! vasculature
+relationship: part_of UBERON:0000475 ! organism subdivision
+
+[Term]
+id: UBERON:0001443
+name: chest
+def: "Subdivision of trunk proper, which is demarcated from the neck by the plane of the superior thoracic aperture and from the abdomen internally by the inferior surface of the diaphragm and externally by the costal margin and associated with the thoracic vertebral column and ribcage and from the back of the thorax by the external surface of the posterolateral part of the rib cage, the anterior surface of the thoracic vertebral column and the posterior axillary lines; together with the abdomen and the perineum, it constitutes the trunk proper[FMA]." []
+synonym: "anterolateral part of thorax" EXACT []
+synonym: "front of thorax" EXACT []
+synonym: "pectus" EXACT []
+synonym: "thoracic body wall" RELATED []
+synonym: "thorax" RELATED []
+synonym: "ventral part of thoracic region" EXACT []
+is_a: UBERON:0009569 ! subdivision of trunk
+relationship: part_of UBERON:0000915 ! thoracic segment of trunk
+
+[Term]
+id: UBERON:0010000
+name: multicellular anatomical structure
+def: "An anatomical structure that has more than one cell as a part." []
+synonym: "multicellular structure" EXACT []
+is_a: UBERON:0000061 ! anatomical structure
+
+[Term]
+id: UBERON:0000465
+name: material anatomical entity
+def: "Anatomical entity that has mass." []
+is_a: UBERON:0001062 ! anatomical entity
+
+[Term]
+id: UBERON:0001062
+name: anatomical entity
+def: "Biological entity that is either an individual member of a biological species or constitutes the structural organization of an individual member of a biological species." []
+
+[Term]
+id: UBERON:0001911
+name: mammary gland
+def: "A specialized accessory gland of the skin of mammals that secretes milk. The gland is typically only developed in females, and regresses in males." []
+synonym: "Brustdruese" RELATED []
+synonym: "dug" RELATED []
+synonym: "glandula mammaria" EXACT []
+synonym: "glandula mammaria" RELATED []
+synonym: "lactiferous gland" EXACT []
+synonym: "lobe of breast" NARROW []
+synonym: "lobe of mammary gland" RELATED []
+synonym: "mamma" RELATED []
+synonym: "mammae" RELATED []
+synonym: "milk patch" NARROW []
+is_a: UBERON:0000310 ! breast
+is_a: UBERON:0004121 ! ectoderm-derived structure
+is_a: UBERON:0019319 ! exocrine gland of integumental system
+relationship: develops_from UBERON:0005333 ! mammary bud
+relationship: part_of UBERON:0002416 ! integumental system
+
+[Term]
+id: UBERON:0004121
+name: ectoderm-derived structure
+def: "An anatomical structure that develops (entirely or partially) from the ectoderm." []
+is_a: UBERON:0000061 ! anatomical structure
+intersection_of: UBERON:0000061 ! anatomical structure
+intersection_of: develops_from UBERON:0000924 ! ectoderm
+relationship: develops_from UBERON:0000924 ! ectoderm
+
+
+[Term]
+id: UBERON:0000061
+name: anatomical structure
+def: "Material anatomical entity that is a single connected structure with inherent 3D shape generated by coordinated expression of the organism's own genome." []
+synonym: "biological structure" EXACT []
+synonym: "connected biological structure" EXACT []
+is_a: UBERON:0000465 ! material anatomical entity
